@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="gdut.bsx.tensorflowtraining.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_picture"
+        android:layout_width="0dp"
+        android:layout_height="454dp"
+        android:layout_marginTop="8dp"
+        android:background="#000000"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/iv_choose_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background"
+        tools:srcCompat="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_classifier_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/iv_picture"
+        app:layout_constraintTop_toTopOf="@+id/iv_picture"
+        app:layout_constraintVertical_bias="0.924"
+        tools:text="识别到的类型" />
+
+    <ImageView
+        android:id="@+id/iv_choose_picture"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:contentDescription="Choose Picture"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/iv_take_photo"
+        app:layout_constraintTop_toBottomOf="@+id/iv_picture"
+        app:srcCompat="@drawable/ic_images" />
+
+    <ImageView
+        android:id="@+id/iv_take_photo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:contentDescription="Take Photo"
+        android:scaleType="centerInside"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.668"
+        app:layout_constraintStart_toEndOf="@+id/iv_choose_picture"
+        app:layout_constraintTop_toBottomOf="@+id/iv_picture"
+        app:srcCompat="@drawable/ic_camera" />
+
+</android.support.constraint.ConstraintLayout>
